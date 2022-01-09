@@ -1,0 +1,68 @@
+{
+	"name": "chendegui.vscode-issue139907-demo",
+	"displayName": "vscode-issue139907-demo",
+	"description": "vscode-issue139907-demo",
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"version": "0.0.1",
+	"publisher": "ChenDeGui",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:chendegui.vscode-issue139907-demo"
+	],
+	"main": "./out/extension.js",
+	"capabilities": {
+		"virtualWorkspaces": true,
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "chendegui.vscode-issue139907-demo",
+				"title": "Open MD From FileSystemProvider",
+				"category": "ChenDeGui"
+			}
+		],
+		"menus": {
+		  "commandPalette": [
+			{
+			  "command": "chendegui.vscode-issue139907-demo",
+			  "when": "resourceExtname == '.md'",
+			  "group": "ChenDeGui"
+			}
+		  ]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -w -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.54.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"typescript": "^4.4.3",
+		"@yarnpkg/fslib": "^2.6.0",
+		"@yarnpkg/libzip": "^2.2.0"
+	},
+	"dependencies": {}
+}
