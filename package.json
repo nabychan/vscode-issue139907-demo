@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/nabychan/vscode-issue139907-demo.git"
 	},
 	"engines": {
 		"vscode": "^1.54.0"
