@@ -1,0 +1,7 @@
+src/**
+Resource/**
+.vscode/**
+tsconfig.json
+.eslintignore
+.eslintrc.js
+.gitignore
